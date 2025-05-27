@@ -2,83 +2,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mais Transparência MT</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Transparência MT</title>
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<body class="bg-white text-gray-800">
-  <header class="bg-blue-900 text-white p-6 text-center">
-    <h1 class="text-4xl font-bold mb-2">Projeto Mais Transparência MT</h1>
-    <p class="text-lg">Transformando dados públicos em cidadania ativa e controle social em Mato Grosso.</p>
-  </header>
+<body>
+    <header class="hero">
+        <h1>Mais Transparência MT</h1>
+        <p>Transformando dados públicos em cidadania ativa e controle social.</p>
+        <a href="#subprojetos" class="cta-button">Conheça os Subprojetos</a>
+    </header>
 
-  <nav class="bg-blue-100 p-4 flex flex-wrap justify-center gap-4 text-blue-900 font-semibold">
-    <a href="#sobre" class="hover:underline">Sobre</a>
-    <a href="#subprojetos" class="hover:underline">Subprojetos</a>
-    <a href="#painel" class="hover:underline">Painel de Dados</a>
-    <a href="#contato" class="hover:underline">Contato</a>
-  </nav>
-
-  <main class="max-w-6xl mx-auto p-6 space-y-12">
-    <section id="sobre">
-      <h2 class="text-2xl font-bold mb-4">Sobre o Projeto</h2>
-      <p>O Projeto <strong>Mais Transparência MT</strong> é uma plataforma cívica independente que fiscaliza o uso de recursos públicos no Estado de Mato Grosso. Acompanhamos emendas parlamentares, verbas indenizatórias, atuação legislativa e execução de obras públicas, sempre com dados abertos, visualizações claras e participação cidadã.</p>
+    <section id="sobre" class="section">
+        <h2>Sobre o Projeto</h2>
+        <p>O Projeto Mais Transparência MT é uma iniciativa cívica que monitora o uso de emendas parlamentares, verbas indenizatórias, atuação legislativa e obras públicas no Estado de Mato Grosso, utilizando dados abertos, tecnologia e participação cidadã.</p>
     </section>
 
-    <section id="subprojetos">
-      <h2 class="text-2xl font-bold mb-4">Nossos Subprojetos</h2>
-      <ul class="space-y-4">
-        <li>
-          <h3 class="text-xl font-semibold text-blue-800">Q.I. – Quem Indica</h3>
-          <p>Rastreia as emendas parlamentares: quem indica, para onde vai e com qual impacto.</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-blue-800">Caiu na Conta</h3>
-          <p>Monitora reembolsos e verbas indenizatórias: alimentação, combustível, aluguel, viagens.</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-blue-800">LegisLupa</h3>
-          <p>Fiscaliza a atuação das Câmaras Municipais: frequência, projetos, gastos e diárias.</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-blue-800">Capivara MT</h3>
-          <p>Puxa a ficha pública dos políticos: processos, patrimônio e histórico político.</p>
-        </li>
-        <li>
-          <h3 class="text-xl font-semibold text-blue-800">Onde Foi Parar?</h3>
-          <p>Confere a execução das obras financiadas com dinheiro público: promessa x realidade.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="painel">
-      <h2 class="text-2xl font-bold mb-4">Painel de Dados</h2>
-      <p>Explore gráficos, mapas e rankings interativos sobre a gestão pública em Mato Grosso.</p>
-      <div class="aspect-w-16 aspect-h-9">
-        <iframe class="w-full h-96 border rounded" src="https://lookerstudio.google.com/embed/reporting/uvZC7UgH37s/page/panel" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </section>
-
-    <section id="contato">
-      <h2 class="text-2xl font-bold mb-4">Fale Conosco</h2>
-      <p>Quer denunciar algo, contribuir com informações ou ser parceiro do projeto? Escreva para nós:</p>
-      <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST" class="space-y-4 mt-4">
-        <div>
-          <label class="block font-semibold">Seu nome (opcional)</label>
-          <input type="text" name="nome" class="w-full border p-2 rounded" placeholder="Nome">
+    <section id="subprojetos" class="section">
+        <h2>Subprojetos</h2>
+        <div class="subprojetos-grid">
+            <div class="sub-item"><h3>🔍 Q.I. – Quem Indica</h3><p>Rastreia as emendas: quem indica, para onde vai e com qual impacto.</p></div>
+            <div class="sub-item"><h3>💸 Caiu na Conta</h3><p>Monitora reembolsos e verbas indenizatórias: alimentação, combustível, viagens.</p></div>
+            <div class="sub-item"><h3>🏛️ LegisLupa</h3><p>Fiscaliza a atuação das Câmaras Municipais: frequência, projetos e gastos.</p></div>
+            <div class="sub-item"><h3>🦫 Capivara MT</h3><p>Consulta a ficha pública: processos, patrimônio e histórico político.</p></div>
+            <div class="sub-item"><h3>📍 Onde Foi Parar?</h3><p>Confere a execução das obras prometidas e realizadas.</p></div>
         </div>
-        <div>
-          <label class="block font-semibold">Mensagem</label>
-          <textarea name="mensagem" class="w-full border p-2 rounded" rows="4" placeholder="Descreva sua mensagem"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-900">Enviar</button>
-      </form>
     </section>
-  </main>
 
-  <footer class="bg-blue-900 text-white p-6 mt-10 text-center">
-    <p>© 2025 Projeto Mais Transparência MT — Todos os direitos reservados.</p>
-  </footer>
+    <section id="painel" class="section">
+        <h2>Painel de Dados</h2>
+        <p>Explore nossos gráficos e mapas interativos para entender como os recursos públicos estão sendo utilizados.</p>
+        <iframe src="https://lookerstudio.google.com/embed/reporting/uvZC7UgH37s/page/panel" class="data-panel"></iframe>
+    </section>
+
+    <section id="contato" class="section">
+        <h2>Fale Conosco</h2>
+        <p>Envie denúncias, sugestões ou parcerias pelo formulário abaixo:</p>
+        <form action="https://formsubmit.co/seuemail@exemplo.com" method="POST" class="contact-form">
+            <input type="text" name="nome" placeholder="Seu nome (opcional)">
+            <textarea name="mensagem" placeholder="Sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Projeto Mais Transparência MT. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

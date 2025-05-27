@@ -1,11 +1,11 @@
-# Projeto Mais Transparência - MT
 
-## Como publicar no GitHub Pages
-1. Crie um repositório no GitHub chamado `mais-transparencia-mt`.
-2. Faça upload do arquivo `index.html`.
-3. Vá em **Settings > Pages** e selecione a branch `main` e a pasta `/root`.
-4. Seu site estará disponível no endereço `https://seuusuario.github.io/mais-transparencia-mt/`.
+# Projeto Mais Transparência MT
 
-## Observações
-- Altere o e-mail no formulário (`index.html`) para onde deseja receber denúncias.
-- Substitua o link do Looker Studio no iframe pelo painel oficial quando disponível.
+Este pacote contém o site adaptado no estilo Agile Agency com as cores, ícones e seções aprovadas.
+
+## Como usar
+1. Abra `index.html` no navegador para visualizar localmente.
+2. Personalize os textos e links conforme necessário.
+3. Publique no GitHub Pages ou servidor de sua escolha.
+
+Paleta: Azul institucional (#004C99), Azul claro (#3DA9FC), Cinza (#F5F5F5), Verde sinalização (#4CAF50).
